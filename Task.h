@@ -21,9 +21,23 @@ struct Date {
     /** @brief Dia de la fecha limite. */
     int dd;
 
-    /** @brief Anio de la fecha limite. */
+    /** @brief Año de la fecha limite. */
     int yy;
 };
+/** @brief Determina si un año es bisiesto.
+ *
+ * @param year Año que se evaluara.
+ * @return true si el año es bisiesto; de lo contrario false.
+ */
+bool isLeapYear(int year);
+
+/** @brief Obtiene la cantidad de dias de un mes para un año especifico.
+ *
+ * @param month Numero de mes de 1 a 12.
+ * @param year Año usado para evaluar febrero en años bisiestos.
+ * @return Cantidad de dias del mes proporcionado.
+ */
+int daysInMonth(int month, int year);
 
 /**
  * @brief Representa una tarea academica gestionada por el planificador.

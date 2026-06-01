@@ -7,7 +7,7 @@
 
 #include "Task.h"
 
-/**
+/** 
  * @brief Crea una lista enlazada vacia.
  */
 template <class DataType>
@@ -123,24 +123,6 @@ bool LinkedList<DataType>::removeByID(int target) {
     }
 
     return false;
-}
-
-/**
- * @brief Copia el contenido de la lista en un vector.
- *
- * @return Vector con todos los elementos almacenados.
- */
-template <class DataType>
-vector<DataType> LinkedList<DataType>::toVector() const {
-    vector<DataType> items;
-    Node* current = start;
-
-    while (current != nullptr) {
-        items.push_back(current->info);
-        current = current->next;
-    }
-
-    return items;
 }
 
 template class LinkedList<Task>;

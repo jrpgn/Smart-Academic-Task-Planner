@@ -71,20 +71,20 @@ ostream& operator<<(ostream& out, const Task& task) {
     return out;
 }
 /**
- * @brief Determina si un anio es bisiesto.
+ * @brief Determina si un año es bisiesto.
  *
- * @param year Anio que se evaluara.
- * @return true si el anio es bisiesto; de lo contrario false.
+ * @param year Año que se evaluara.
+ * @return true si el año es bisiesto; de lo contrario false.
  */
 bool isLeapYear(int year) {
     return (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
 }
 
 /**
- * @brief Obtiene la cantidad de dias de un mes para un anio especifico.
+ * @brief Obtiene la cantidad de dias de un mes para un año especifico.
  *
  * @param month Numero de mes de 1 a 12.
- * @param year Anio usado para evaluar febrero en anios bisiestos.
+ * @param year Año usado para evaluar febrero en años bisiestos.
  * @return Cantidad de dias del mes proporcionado.
  */
 int daysInMonth(int month, int year) {
